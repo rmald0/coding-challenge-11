@@ -6,9 +6,9 @@ library(polite)
 
 # Download a random page
 rand_page <- function(){
-  random_url <- "https://en.wikipedia.org/wiki/Special:Random"
+  random_url <- "https://en.wikipedia.org/wiki/Chumlee"
   read_html(random_url)
-  #politely(read_html)(random_url) # not going to work for random url.
+  politely(read_html)(random_url) # not going to work for random url.
 }
 
 # Get the title from a given page
